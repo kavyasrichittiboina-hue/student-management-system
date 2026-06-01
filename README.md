@@ -1,46 +1,122 @@
-# Student Management System
+# Student Registration Website
 
-This is a Python project used to manage student records using file handling.
+## Description
 
----
+Student Registration Website is a Flask-based web application that allows users to register student details, view all registered students, update student information, and delete records. The application uses SQLite for data storage and provides complete CRUD (Create, Read, Update, Delete) functionality.
 
 ## Features
 
-* Add new student
-* View all students
-* Search student by ID
-* Delete student record
+* Student Registration Form
+* Store Student Information in SQLite Database
+* View All Registered Students
+* Update Student Details
+* Delete Student Records
+* About Page
+* Contact Page
+* Flask Routing
+* Database Integration
 
----
+## Technologies Used
 
-## Concepts Used
+* Python
+* Flask
+* SQLite
+* HTML
+* CSS
 
-* File handling (`read`, `write`, `append`)
-* Functions
-* Loops
-* Conditional statements
-* Lists
+## Website Pages
 
----
+### Home Page
+
+Students can enter:
+
+* Name
+* Age
+* Email
+* Password
+
+### Students Page
+
+Displays all registered students stored in the database.
+
+### Update Page
+
+Allows modification of student details.
+
+### Delete Page
+
+Allows deletion of student records.
+
+### About Page
+
+Provides information about the website.
+
+### Contact Page
+
+Displays contact information.
+
+## Database
+
+The project automatically creates:
+
+### studentregistration Table
+
+| Column   | Type    |
+| -------- | ------- |
+| id       | Integer |
+| name     | Text    |
+| age      | Integer |
+| email    | Text    |
+| password | Text    |
+
+## Project Structure
+
+```text
+student-registration-website/
+│
+├── app.py
+├── studentregistration.db
+│
+├── templates/
+│   ├── home.html
+│   ├── students.html
+│   ├── update.html
+│   ├── delete.html
+│   ├── about.html
+│   └── contact.html
+│
+└── static/
+    └── style.css
+```
 
 ## How to Run
 
-Run the program using:
+1. Install Flask
 
-```bash id="run456"
-python student_management.py
+```bash
+pip install flask
 ```
 
----
+2. Run the application
 
-## Future Improvements
+```bash
+python app.py
+```
 
-* Add update student feature
-* Prevent duplicate student IDs
-* Improve input validation
-* Convert to database (SQLite/MySQL)
+3. Open your browser
 
----
+```text
+http://127.0.0.1:5000
+```
+
+## Learning Outcomes
+
+* Flask Routing
+* Form Handling
+* SQLite Database Operations
+* CRUD Operations
+* Dynamic HTML Rendering
+* Web Application Development
 
 ## Author
 
