@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Student Information</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <h1>Update Student Information</h1>
+    <form method="POST">
+        <input type="text" name="name" value="{{student[0]}}">
+        <input type="number" name="age" value="{{student[1]}}"> 
+        <input type="email" name="email" value="{{student[2]}}">
+        <input type="password" name="password" value="{{student[3]}}">
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>

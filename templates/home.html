@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About us</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <h1>Student Registration Form</h1>
+    <img src="{{ url_for('static', filename='student.png') }}"
+     width="200">
+    <form method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" placeholder="Enter name">
+        <label for="age">Age:</label>
+        <input type="number" name="age" placeholder="Enter age">
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter your email">
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter password">
+        <button type="submit">Submit</button>
+    </form>
+    <h2>{{username}}</h2>
+    <h2>{{age}}</h2>
+    <h2>{{email}}</h2>
+</body>
+</html>
